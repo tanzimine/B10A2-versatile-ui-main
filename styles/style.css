@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@100..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 5rem auto;
+}
+
+
+
+
+/* shared styles */
+.dark-white{
+    color: rgb(255, 255, 255);
+}
+.light-white{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* header */
+body{
+    background-color: rgba(17, 17, 17, 1.00);
+}
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 55px 190px;
+
+}
+.fitness-text{
+    font-size: 2.25rem;
+    font-weight: bolder;
+    color: #E6533C;
+    font-style: italic;
+}
+
+.nav-options{
+    display: flex;
+    gap: 45px;
+    border: 1px solid rgb(79, 67, 67);
+    border-radius: 39px;
+    padding: 12px;
+    align-items: center;
+}
+.btn-primary{
+    background-color: #E6533C;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+}
+
+/* Get Body Part */
+.get-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-body-content{
+    justify-content: center;
+    align-items: center;
+}
+
+.get-body-content-title{
+    font-size: 78px;
+    
+}
+#shape-text{
+    font-family: "Cedarville Cursive", cursive;
+}
+.get-body-content p{
+    font-size: 16px;
+    opacity: 50%;
+    line-height: 26px;
+    width: 676px;
+    padding: 1.5rem 0;
+    margin: auto;
+}
+.second-btn{
+    background-color: rgba(17, 17, 17, 1.00);
+    border: 1px solid white;
+}
+
+.blurred-sec1, .blurred-sec2 {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
+.blurred-sec1 {
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.blurred-sec2 {
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+/* Change your habit section */
+.habit-title{
+    font-size: 48px;
+}
+
+.change-habit-title-contents{
+    text-align: center;
+}
+
+.habit-content{
+    text-align: center;
+    padding: 14px 0;
+}
+
+.element-image{
+    border-radius: 50%;
+    border: 5px solid rgb(47, 45, 45);
+}
+
+.four-elements{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.element{
+    text-align: center;
+}
+.element p{
+    padding: 10px 0px;
+}
