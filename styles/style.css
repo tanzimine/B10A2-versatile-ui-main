@@ -36,26 +36,29 @@ body{
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    flex-wrap: wrap;
 }
 
 .fitness-text {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     font-weight: bolder;
     color: #E6533C;
     font-style: italic;
-    margin-left: 10%;
+  
 }
 
 .nav-options {
     display: flex;
-    gap: 45px;
+    gap: 10px;
     align-items: center; 
+    margin-top: 1rem;
 }
 
 .nav-options p {
     margin: 0; 
-    display: flex;
-    align-items: center; 
+    /* display: flex;
+    align-items: center;  */
+    padding: 5px 10px;
 }
 
 .btn-primary {
@@ -65,6 +68,7 @@ body{
     font-weight: bold;
     border: none;
     color: white; 
+    padding: 5px 15px; 
 }
 
 
@@ -441,4 +445,135 @@ body{
 .stories-action .btn-primary {
     padding: 12px 25px;
     font-size: 16px;
+}
+
+
+
+/* RESPONSIVE PARTTTTT */
+
+@media (max-width: 425px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .get-body {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .get-body-content-title {
+        font-size: 2rem;
+    }
+
+    .get-body-content p {
+        font-size: 14px;
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .blurred-sec1, .blurred-sec2 {
+        width: 100px;
+        height: 50px;
+    }
+
+    .change-habit-title-contents {
+        padding: 10px 0;
+    }
+
+    .habit-title {
+        font-size: 2rem;
+    }
+
+    .four-elements {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .run-extra-mile-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .run-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .run-mile-contents {
+        margin: 20px 0;
+    }
+
+    .run-image {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .bmi-calculator-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .bmi-calculator-chart, .bmi-calculator-form {
+        width: 100%;
+    }
+
+    .stories-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .rows {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .footer-threes {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .fitness-foot {
+        font-size: 1.5rem;
+    }
+
+    .get-title {
+        font-size: 1.5rem;
+    }
+
+    .lists {
+        text-align: center;
+    }
+}
+
+/* Large devices (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .get-body-content-title {
+        font-size: 4.5rem;
+    }
+
+    .habit-title, .run-title {
+        font-size: 4.5rem;
+    }
+
+    .four-elements {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stories-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .row1, .row2 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .container {
+        width: 75%;
+    }
 }
