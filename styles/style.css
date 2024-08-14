@@ -4,16 +4,6 @@
 body{
     font-family: "Inter", sans-serif;
 }
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.container{
-    width: 90%;
-    margin: 5rem auto;
-}
-
 
 
 
@@ -29,36 +19,55 @@ body{
 body{
     background-color: rgba(17, 17, 17, 1.00);
 }
-/* navbar */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 55px 190px;
 
+
+* {
+    margin: 0;
+    padding: 0;
 }
-.fitness-text{
+
+.container {
+    width: 90%;
+    margin: 5rem auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Use space-between to separate left and right content */
+    align-items: center; /* Center both elements vertically */
+}
+
+.fitness-text {
     font-size: 2.25rem;
     font-weight: bolder;
     color: #E6533C;
     font-style: italic;
+    margin-left: 10%;
 }
 
-.nav-options{
+.nav-options {
     display: flex;
     gap: 45px;
-    border: 1px solid rgb(79, 67, 67);
-    border-radius: 39px;
-    padding: 12px;
-    align-items: center;
+    align-items: center; 
 }
-.btn-primary{
+
+.nav-options p {
+    margin: 0; 
+    display: flex;
+    align-items: center; 
+}
+
+.btn-primary {
     background-color: #E6533C;
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 20px;
     font-weight: bold;
     border: none;
+    color: white; 
 }
+
+
 
 /* Get Body Part */
 .get-body{
